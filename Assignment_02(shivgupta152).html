@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ectra 02</title>
+    <link rel="stylesheet" href="Assignment02.css">
+</head>
+<body>
+<style>
+    *{
+        font-family: "Arial Black",SansSerif;
+        font-style: italic;
+        font-size: 20px;
+    }
+    #MainList{
+        color: orange;
+        border: solid 5px;
+    }
+    .list{
+        display: none;
+        color: red;
+        margin: 5px;
+
+    }
+
+    li:hover > .list{
+        display:block;
+        color: red;
+        border: solid 5px;
+    }
+    .sublist{
+        display: none;
+        color: blue;
+
+    }
+    li:hover > .sublist{
+        display:block;
+        color: blue;
+        border: solid 5px;
+        margin: 5px;
+    }
+
+</style>
+<H1 style="color: purple" align="center">Hovering Menu</H1>
+<ul id = "MainList">
+    <li>One
+        <ul class = "list">
+            <li> One Point One
+                <ul class = "sublist">
+                    <li> One Point One Point One</li>
+                    <li> One Point One Point Two </li>
+                </ul></li>
+            <li>One Point Two
+                <ul class = "sublist">
+                    <li> One Point Two Point One</li>
+                    <li> One Point Two Point Two </li>
+                </ul>
+            </li>
+            <li> One Point Three</li>
+        </ul>
+    </li>
+
+    <li>Two
+
+        <ul  class = "list">
+            <li> Two Point One</li>
+            <li> Two Point Two
+                <ul class = "sublist">
+                    <li> Two Point Two Point One</li>
+                    <li> Two Point Two Point Two </li>
+                </ul></li>
+            <li> Two Point Three
+                <ul class="sublist">
+                    <li> Two Point Three Point One</li>
+                    <li> Two Point Three Point Two </li>
+                </ul></li>
+
+        </ul>
+    </li>
+    <li>Three
+        <ul class="list">
+            <li>Three Point One</li>
+            <li>Three Point Two</li>
+            <li>Three Point Three
+                <ul class="sublist">
+                    <li>Three Point Three Point One</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
